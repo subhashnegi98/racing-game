@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carGame{
+    width: 100%;
+    height: 100vh;
+    background: url('./img/toy.jpg') no-repeat;
+    background-size: 100% 100%;
+
+}
+.hide{
+    display: none;
+}
+
+.car, .enemy{
+    width: 30px;
+    height: 50px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    bottom: 120px;
+
+}
+
+.gameArea{
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    margin: auto;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+}
+
+.lines{
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    margin-left: 195px;
+    background: white;
+}
+
+.score{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: tomato;
+    width: 200px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: fantasy;
+    box-shadow: 0 5px 5px #777;
+}
+
+.startScreen{
+    position: absolute;
+    background: tomato;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+    font-family: fantasy;
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+}
